@@ -1,3 +1,24 @@
+Problem Statement
+
+Traditional parking management systems often rely on manual entry, paper-based records, and security personnel to track vehicles and visitors. This process is time-consuming, prone to human errors, and can lead to congestion, unauthorized access, and inefficient utilization of parking spaces.
+
+To address these challenges, a smart digital solution is required that automates visitor registration, parking allocation, and entry/exit verification. The proposed SmartPark QR system uses QR code technology to streamline parking operations by enabling quick visitor registration, secure authentication, digital record management, and instant QR code generation for vehicle access. This improves security, reduces waiting time, enhances parking space management, and provides a seamless experience for both administrators and visitors.
+
+Objectives
+
+Automate visitor and parking management.
+Generate unique QR codes for visitor/vehicle verification.
+Reduce manual paperwork and human errors.
+Improve parking security and access control.
+Maintain a centralized database of visitors and parking records.
+Enable quick entry and exit through QR code scanning.
+
+Technology Stack
+Frontend: HTML, CSS, JavaScript
+Backend: Node.js, Express.js
+Database: MongoDB
+Authentication: JWT
+QR Generation: QRCode Library
 # SmartPark QR – Setup Guide
 
 ## Project Structure
