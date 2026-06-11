@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Pass – SmartPark QR</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+    <h1>🚗 SmartPark QR</h1>
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+</nav>
+
+<div class="card-box">
+    <h2>Visitor QR Pass</h2>
+    <p class="subtitle" id="visitorInfo">Loading visitor details…</p>
+
+    <div class="qr-box">
+        <img id="qrImage" src="" alt="QR Code">
+        <br>
+        <button onclick="window.print()">🖨 Print Pass</button>
+        <a href="dashboard.html" class="form-link">← Back to Dashboard</a>
+    </div>
+</div>
+
+<script src="../js/qr.js"></script>
+</body>
+</html>

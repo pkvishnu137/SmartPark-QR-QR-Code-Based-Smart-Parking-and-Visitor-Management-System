@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Scanner – SmartPark QR</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+</head>
+<body>
+
+<nav>
+    <h1>🚗 SmartPark QR</h1>
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+</nav>
+
+<div class="dashboard">
+    <h1>Security Scanner</h1>
+    <p class="subtitle">Point camera at a visitor QR pass to verify entry.</p>
+
+    <div id="reader"></div>
+
+    <div id="scan-result">
+        <h3 style="color:#0f172a;margin-bottom:12px;">✅ Scan Result</h3>
+        <table>
+            <tbody id="resultBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="../js/scanner.js"></script>
+</body>
+</html>

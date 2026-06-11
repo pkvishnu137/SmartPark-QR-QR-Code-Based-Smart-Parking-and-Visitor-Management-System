@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard – SmartPark QR</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+    <h1>🚗 SmartPark QR</h1>
+    <ul>
+        <li><a href="dashboard.html">Resident Dashboard</a></li>
+        <li><a id="logoutBtn" href="#">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="dashboard">
+    <h1>Admin Dashboard</h1>
+    <p class="subtitle">Full system overview</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Total Visitors</h3>
+            <p id="totalVisitors">—</p>
+        </div>
+        <div class="card">
+            <h3>Active Passes</h3>
+            <p id="activeVisitors">—</p>
+        </div>
+    </div>
+
+    <h2 style="color:#0f172a;margin-bottom:12px;">All Visitors</h2>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Vehicle</th>
+                    <th>Arrival</th>
+                    <th>Expiry</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="visitorTable">
+                <tr><td colspan="6" style="text-align:center;color:#94a3b8;">Loading…</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="../js/admin.js"></script>
+</body>
+</html>

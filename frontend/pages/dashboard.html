@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard – SmartPark QR</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+    <h1>🚗 SmartPark QR</h1>
+    <ul>
+        <li><a href="visitor.html">Add Visitor</a></li>
+        <li><a href="scanner.html">Scanner</a></li>
+        <li><a id="logoutBtn" href="#">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="dashboard">
+    <h1>Dashboard</h1>
+    <p class="subtitle">Real-time parking overview</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Total Visitors</h3>
+            <p id="totalVisitors">—</p>
+        </div>
+        <div class="card">
+            <h3>Active Today</h3>
+            <p id="activeVisitors">—</p>
+        </div>
+    </div>
+
+    <h2 style="color:#0f172a;margin-bottom:12px;">Recent Visitors</h2>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Vehicle</th>
+                    <th>Arrival</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="visitorTable">
+                <tr><td colspan="5" style="text-align:center;color:#94a3b8;">Loading…</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <a href="visitor.html"><button style="margin-top:28px;">+ Add New Visitor</button></a>
+</div>
+
+<script src="../js/dashboard.js"></script>
+</body>
+</html>

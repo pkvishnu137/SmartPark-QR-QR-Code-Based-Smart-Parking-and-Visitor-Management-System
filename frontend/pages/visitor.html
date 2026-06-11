@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Visitor – SmartPark QR</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+    <h1>🚗 SmartPark QR</h1>
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+</nav>
+
+<div class="card-box">
+    <h2>Add Visitor</h2>
+    <p class="subtitle">Fill in the details to generate a QR parking permit.</p>
+
+    <div id="alert" class="alert"></div>
+
+    <label for="name">Visitor Name</label>
+    <input type="text" id="name" placeholder="Full name" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="e.g. 9876543210" required>
+
+    <label for="vehicle">Vehicle Number</label>
+    <input type="text" id="vehicle" placeholder="e.g. TN01AB1234" required>
+
+    <button id="submitBtn" type="button">Generate QR Pass</button>
+</div>
+
+<script src="../js/visitor.js"></script>
+</body>
+</html>
